@@ -55,7 +55,7 @@ function getStringLength(value1) {
  */
 function getStringFromTemplate(firstName, lastName) {
   // throw new Error('Not implemented');
-  return `Hello, ${firstName} ${lastName}`;
+  return `Hello, ${firstName} ${lastName}!`;
 }
 
 /**
@@ -70,7 +70,7 @@ function getStringFromTemplate(firstName, lastName) {
  */
 function extractNameFromTemplate(value) {
   // throw new Error('Not implemented');
-  return value.slice(7);
+  return value.slice(7, value.length - 1);
 }
 
 
@@ -118,7 +118,7 @@ function removeLeadingAndTrailingWhitespaces(value) {
  */
 function repeatString(value, count) {
   // throw new Error('Not implemented');
-  return value.padEnd(count, 'value');
+  return value.repeat(count);
 }
 
 /**
@@ -135,7 +135,7 @@ function repeatString(value, count) {
  */
 function removeFirstOccurrences(str, value) {
   // throw new Error('Not implemented');
-  return str.replace((`${value}, `), '');
+  return str.replace(value, ' ');
 }
 
 /**
@@ -151,7 +151,7 @@ function removeFirstOccurrences(str, value) {
  */
 function unbracketTag(str) {
   // throw new Error('Not implemented');
-  return str.substring(0, str.length - 1);
+  return str.substring(1, str.length - 1);
 }
 
 
