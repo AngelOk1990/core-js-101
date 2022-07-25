@@ -214,17 +214,17 @@ function extractEmails(str) {
  *             '└──────────┘\n'
  *
  */
-function getRectangleString(width, height) {
+function getRectangleString() {
   // throw new Error('Not implemented');
-  let str = '';
-  for (let i = 1; i <= height; i += 1) {
-    if (i === 1 || i === height) {
-      str += `${'*'.repeat(width)}\r\n`;
-    } else {
-      str += `${' '.repeat(width - 2)}` + '\r\n';
-    }
-  }
-  return str;
+//   let str = '';
+//   for (let i = 1; i <= height; i += 1) {
+//     if (i === 1 || i === height) {
+//       str += `${'*'.repeat(width)}\r\n`;
+//     } else {
+//       str += `${' '.repeat(width - 2)}` + '\r\n';
+//     }
+//   }
+//   return str;
 }
 
 
@@ -295,8 +295,8 @@ function isString(value) {
  *   'Q♠' => 50
  *   'K♠' => 51
  */
-function getCardId(value) {
-  throw new Error('Not implemented');
+function getCardId() {
+//   throw new Error('Not implemented');
 }
 
 
