@@ -126,7 +126,7 @@ function removeFalsyValues(arr) {
  */
 function getUpperCaseStrings(arr) {
   // throw new Error('Not implemented');
-  return String(arr).toUpperCase().split(",");
+  return String(arr).toUpperCase().split(',');
 }
 
 
@@ -171,7 +171,7 @@ function insertItem(/* arr, item, index */) {
  */
 function getHead(arr, n) {
   // throw new Error('Not implemented');
-  return arr.slice(0, n)
+  return arr.slice(0, n);
 }
 
 
@@ -187,7 +187,7 @@ function getHead(arr, n) {
  */
 function getTail(arr, n) {
   // throw new Error('Not implemented');
-  return arr.slice(-n)
+  return arr.slice(-n);
 }
 
 
@@ -213,7 +213,8 @@ function getTail(arr, n) {
  */
 function toCsvText(arr) {
   // throw new Error('Not implemented');
-  return arr.map(function(arr){ arr.join() }).join('\n');
+  const res = arr.map(arr.join()).join('\n');
+  return res;
 }
 
 /**
@@ -228,8 +229,8 @@ function toCsvText(arr) {
  *   [ 10, 100, -1 ]      => [ 100, 10000, 1 ]
  */
 function toArrayOfSquares(arr) {
-  // throw new Error('Not implemented');
- return arr.map(v => Math.pow(v, 2))
+// throw new Error('Not implemented');
+  return arr.map((v) => v ** 2);
 }
 
 
@@ -247,16 +248,8 @@ function toArrayOfSquares(arr) {
  *   [ 0, 0, 0, 0, 0]         => [ 0, 0, 0, 0, 0]
  *   [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] => [ 1, 3, 6, 10, 15, 21, 28, 36, 45, 55 ]
  */
-function getMovingSum(arr) {
-  // throw new Error('Not implemented');
-  let result = [];
-  if (!arr.length) return result;
-  let totalSum = arr.reduce(function(sum, item) {
-    result.push(sum);
-    return sum + item;
-  });
-  result.push(totalSum);
-  return result;
+function getMovingSum(/* arr */) {
+  throw new Error('Not implemented');
 }
 
 /**
@@ -272,7 +265,7 @@ function getMovingSum(arr) {
  */
 function getSecondItems(arr) {
   // throw new Error('Not implemented');
-  return arr.filter((item, index) => index % 2)
+  return arr.filter((item, index) => index % 2);
 }
 
 
